@@ -1,0 +1,45 @@
+{
+  "name": "slide-narrator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Turn a PowerPoint deck into a narrated video with an AI presenter on Agora",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "samples": "node scripts/make-samples.mjs"
+  },
+  "dependencies": {
+    "agora-agent-client-toolkit": "2.10.0",
+    "agora-agents": "^2.14.0",
+    "agora-rtc-react": "^2.5.1",
+    "agora-rtc-sdk-ng": "^4.24.9",
+    "agora-rtm": "^2.3.0",
+    "agora-token": "^2.0.7",
+    "fast-xml-parser": "^5.12.0",
+    "html-to-image": "^1.11.13",
+    "jszip": "^3.10.2",
+    "next": "^16.4.6",
+    "pdfjs-dist": "^6.5.438",
+    "pptx-preview": "^1.0.7",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/pdfkit": "^0.17.7",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "pdfkit": "^0.20.2",
+    "pptxgenjs": "^4.0.1",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "type": "module"
+}

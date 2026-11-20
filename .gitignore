@@ -1,0 +1,31 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+.next/
+.next-*/
+out/
+dist/
+.vercel/
+*.tsbuildinfo
+
+# Python (optional ingest worker)
+__pycache__/
+.venv/
+
+# Local scratch and renders
+tmp/
+renders/
+*.log
+.DS_Store
+
+# Temporary local test files
+public/local-test/
+
+# Local tooling and installed agent skills (not part of the app)
+.agents/
+.claude/
+skills-lock.json
